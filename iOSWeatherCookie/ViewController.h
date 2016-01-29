@@ -10,6 +10,13 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) NSMutableDictionary *weatherForecasts;
+@property (weak, nonatomic) IBOutlet UILabel *lblTemperature;
+@property (weak, nonatomic) IBOutlet UILabel *lblHumidity;
+@property (weak, nonatomic) IBOutlet UILabel *lblPrecipProb;
+@property (weak, nonatomic) IBOutlet UIImageView *imgWeatherIcon;
+@property (weak, nonatomic) IBOutlet UILabel *lblSummary;
+
 
 @end
 
