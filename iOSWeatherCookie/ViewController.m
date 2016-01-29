@@ -36,6 +36,12 @@
     self.currentPrecipProp= [self.weatherForecasts objectForKey:@"precipProbability"];
     self.currentSummary= [self.weatherForecasts objectForKey:@"summary"];
     self.currentWeatherIcon= [self.weatherForecasts objectForKey:@"icon"];
+    
+    self.lblTemperature.text = [NSString stringWithFormat:@"%@°", self.currentTemperature];
+    self.lblHumidity.text = [NSString stringWithFormat:@"%@(grams of water vapor per cubic meter volume of air)", self.currentHumidity];
+    self.lblPrecipProb.text = [NSString stringWithFormat:@"%@ inches",self.currentPrecipProp];
+    self.lblSummary.text = self.currentSummary;
+    
 
 }
 
